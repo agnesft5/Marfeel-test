@@ -42,6 +42,9 @@
 .send__button2{
     margin-top:2%;
 }
+.send__button3{
+    margin-top:5%;
+}
 .banner2__form{
     margin-top: 15%;
 }
@@ -99,5 +102,9 @@
     font-weight: 600;
 }
 .style__success{
-
+    border: 1px solid rgb(21, 87, 36);
+    background-color:rgb(212, 237, 218);
+    color:  rgb(21, 87, 36);
+    border-radius: .25rem;
+    font-weight: 600;
 }
