@@ -5,7 +5,7 @@
 .banner1__form{
     margin-top: 30%;
 }
-.form__container1, .form__container2{
+.form__container1{
     background-color: white;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -41,4 +41,32 @@
 }
 .banner2__form{
     margin-top: 15%;
+}
+.no-border{
+    border:0px;
+}
+.form__container2{
+    background-color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: inline-flex;
+    border-radius: .75rem;
+    width: 63%;
+    padding-left: 5%;
+    padding-right: 0%;
+    -webkit-box-shadow: 9px 9px 27px -13px rgba(0,0,0,0.84);
+    -moz-box-shadow: 9px 9px 27px -13px rgba(0,0,0,0.84);
+    box-shadow: 9px 9px 27px -13px rgba(0,0,0,0.84);
+}
+.card__text{
+    margin-bottom:1%;
+    font-size: 14px;
+}
+.card__title{
+    margin-bottom: 0%;
+    font-weight: 600;
+}
+.card__img{
+    margin-top: 10%;
+    width: 95%;
 }
