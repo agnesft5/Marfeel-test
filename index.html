@@ -16,24 +16,39 @@
           <div class="container">
               <div class="row">
                   <div class="col-sm-12">
-                        <form class="form-inline justify-content-center banner1__form">
+                        <form class="justify-content-center form-inline banner1__form">
                             <div class="form__container1">
-                                <input type="text" class="form-control user__input1 mr-2" placeholder="Search user name...">
-                                <button type="button" class="btn send__button1 ml-2">Search</button>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-9 pr-0">
+                                            <input type="text" class="form-control user__input1" placeholder="Search user name...">
+                                        </div>
+                                        <div class="col-sm-12 col-md-3 text-center">
+                                            <button type="button" class="btn send__button1">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </form>
                   </div>
               </div>
           </div>
       </div>
-      <div class="banner banner2__body">
+      <div class="banner banner2__body d-none">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 text-center">
                         <div class="justify-content-center banner2__form">
                             <div class="form__container2 form-inline">
-                                <input type="text" class="form-control user__input2 mr-2" placeholder="Search user name...">
-                                <button type="button" class="btn send__button2 ml-2">Search</button> 
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12 p-0">
+                                            <input type="text" class="form-control user__input2 mr-2" placeholder="Search user name...">
+                                            <button type="button" class="btn send__button2 ml-2">Search</button>
+                                        </div>
+                                    </div>
+                                </div> 
                                 <div class="card no-border w-100">
                                     <div class="row no-gutters">
                                         <div class="col-sm-3">
@@ -41,15 +56,64 @@
                                         </div>
                                         <div class="col-sm-9">
                                             <div class="card-body text-left">
-                                                <p class="card__text"><small class="text-muted font-italic">@username</small></p>
+                                                <p class="card__text"><small class="card__smalltext font-italic">@username</small></p>
                                                 <p class="card__text"><h1 class="card__title">Full name</h1></p>
-                                                <p class="card__text"><small class="text-muted">this is the bio...</small></p>
+                                                <p class="card__text"><small class="card__smalltext">this is the bio...</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="table__title table__row">Repositories</th>
+                                            <th scope="col" class="table__title"> </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" class="table__row">Repository 1</th>
+                                            <td class="w-100 text-right">Patata</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="table__row">Repository 2</th>
+                                            <td class="w-100 text-right">Patata</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner banner3__body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <form class="justify-content-center form-inline banner3__form">
+                            <div class="form__container3 form-inline text-center">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-9 pr-0">
+                                            <input type="text" class="form-control user__input3" placeholder="Search user name...">
+                                        </div>
+                                        <div class="col-sm-12 col-md-3 text-center">
+                                            <button type="button" class="btn send__button3">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12 p-3">
+                                            <div class="text-left style__danger">
+                                                <p class="m-0 p-3">Patata</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
