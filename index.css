@@ -1,0 +1,44 @@
+.banner1__body, .banner2__body{
+    height:100vh;
+    background-color: rgb(240,240,240);
+}
+.banner1__form{
+    margin-top: 30%;
+}
+.form__container1, .form__container2{
+    background-color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: inline-flex;
+    border-radius: .25rem;
+    width: 63%;
+    padding-left: 5%;
+    padding-right: 0%;
+    -webkit-box-shadow: 9px 9px 27px -13px rgba(0,0,0,0.84);
+    -moz-box-shadow: 9px 9px 27px -13px rgba(0,0,0,0.84);
+    box-shadow: 9px 9px 27px -13px rgba(0,0,0,0.84);
+}
+.user__input1, .user__input2{
+    width: 70% !important;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ced4da !important;
+}
+.send__button1, .send__button2{
+    padding: 1%;
+    width: 14%;
+    background-color: white;
+    border-radius: .25rem;
+    font-weight: 600;
+    background: rgba(226,226,226,1);
+    border: 1px solid lightgray;
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 49%, rgba(238,238,238,1) 96%, rgba(237,237,237,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(49%, rgba(246,246,246,1)), color-stop(96%, rgba(238,238,238,1)), color-stop(100%, rgba(237,237,237,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 49%, rgba(238,238,238,1) 96%, rgba(237,237,237,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 49%, rgba(238,238,238,1) 96%, rgba(237,237,237,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 49%, rgba(238,238,238,1) 96%, rgba(237,237,237,1) 100%);
+}
+.banner2__form{
+    margin-top: 15%;
+}
