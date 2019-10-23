@@ -1,3 +1,5 @@
+//////////////////FUNCIÓ PETICIÓ ///////////////////////
+
 function httpGet(theUrl, callback) {
     let xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function () {
@@ -26,6 +28,25 @@ function error(status) {
 
 /////////////////////   CALLBACK 2      ///////////////////////
 
+function imprimir(objRepo) {
+    console.log(objRepo);
+    for (i = 0; i < objRepo.length; i++) {
+        let repo = objRepo[i];
+        let tr = `<tr><th scope="row" class="table__row">${repo["name"]}</th><td class="w-100 text-right"><i class="fas fa-star"></i><span class="repo__likes"> ${repo["watchers_count"]} </span><i class="fas fa-code-branch"></i><span class="repo__forks">${objRepo[0]["forks_count"]}</span></td></tr>`
+
+        document.querySelector("#tablaEspecial tbody").innerHTML += tr;
+    }
+
+};
+
+//////////// CALLBACK 1 -> Aconsegueixo les dades de dins del primer link////////////
+
+function getLink() {
+    let userNameInput = document.querySelector(".user__input1");
+    let userName = userNameInput.value;
+    let link = `https://api.github.com/users/${userName}`;
+    httpGet(link, getUser)
+};
 
 function getUser(objJSON) {
     let userNameInput = document.querySelector(".user__input1");
@@ -45,29 +66,6 @@ function getUser(objJSON) {
     httpGet(userLink, imprimir);
 };
 
-
-//////////// CALLBACK 1 -> Aconsegueixo les dades de dins del primer link////////////
-
-function getLink() {
-    let userNameInput = document.querySelector(".user__input1");
-    let userName = userNameInput.value;
-    let link = `https://api.github.com/users/${userName}`;
-    httpGet(link, getUser)
-};
-
-
-function imprimir(objRepo) {
-    console.log(objRepo);
-    let likes = document.querySelector(".repo__likes");
-    let forks = document.querySelector(".repo__forks");
-    for (i = 0; i < objRepo.length; i++) {
-        let repo = objRepo[i];
-        let tr = `<tr><th scope="row" class="table__row">${repo["name"]}</th><td class="w-100 text-right"><i class="fas fa-star"></i><span class="repo__likes"> ${repo["watchers_count"]} </span><i class="fas fa-code-branch"></i><span class="repo__forks">${objRepo[0]["forks_count"]}</span></td></tr>`
-
-        document.querySelector("#tablaEspecial tbody").innerHTML += tr;
-    }
-
-};
 
 /////////////// EVENT LISTENER //////////////////
 //////////////////// BOTÓ 1 /////////////////////
