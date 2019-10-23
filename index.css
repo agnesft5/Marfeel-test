@@ -2,8 +2,11 @@
     height:100vh;
     background-color: rgb(240,240,240);
 }
+.banner2__body{
+    height:100%;
+}
 
-.banner1__form, .banner3__form{
+.banner1__form, .banner3__container{
     margin-top: 30%;
 }
 .form__container1, .form__container3{
@@ -20,7 +23,7 @@
 .user__input1, .user__input3{
     font-size: 14px;
     font-weight: 600;
-    color: #ced4da !important;
+    /* color: #ced4da !important; */
     margin-top: 2%;
     width: 100% !important;
 }
@@ -43,10 +46,12 @@
     margin-top:2%;
 }
 .send__button3{
-    margin-top:5%;
+    margin-top:10%;
+    margin-left: 5%;
 }
 .banner2__form{
     margin-top: 15%;
+    margin-bottom :15%;
 }
 .no-border{
     border:0px;
@@ -107,4 +112,7 @@
     color:  rgb(21, 87, 36);
     border-radius: .25rem;
     font-weight: 600;
+}
+.respuesta__container{
+    padding-right: 1% !important;
 }

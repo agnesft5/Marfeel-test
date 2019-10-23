@@ -1,41 +1,41 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-    <title>TITLE</title>
-  </head>
-  <body>
-      <div class="banner banner1__body">
-          <div class="container">
-              <div class="row">
-                  <div class="col-sm-12">
-                        <form class="justify-content-center form-inline banner1__form">
-                            <div class="form__container1">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-sm-12 col-md-9 pr-0">
-                                            <input type="text" class="form-control user__input1" placeholder="Search user name...">
-                                        </div>
-                                        <div class="col-sm-12 col-md-3 text-center">
-                                            <button type="button" class="btn send__button1">Search</button>
-                                        </div>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <link rel="stylesheet" href="index.css">
+        <title>GitHub</title>
+    </head>
+    <body>
+        <!-- Banner 1 -->
+        <div class="banner banner1__body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <div class="form__container1 form-inline banner1__form">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-9 pr-0">
+                                        <input type="text" class="form-control user__input1" placeholder="Search user name...">
+                                    </div>
+                                    <div class="col-sm-12 col-md-3 text-center">
+                                        <button type="button" class="btn send__button1">Search</button>
                                     </div>
                                 </div>
-
                             </div>
-                        </form>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="banner banner2__body">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Banner 2 -->
+        <div class="banner banner2__body d-none">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 text-center">
@@ -56,14 +56,14 @@
                                         </div>
                                         <div class="col-sm-9">
                                             <div class="card-body text-left">
-                                                <p class="card__text"><small class="card__smalltext font-italic">@username</small></p>
+                                                <p class="card__text"><small class="card__smalltext font-italic card__username">@username</small></p>
                                                 <p class="card__text"><h1 class="card__title">Full name</h1></p>
-                                                <p class="card__text"><small class="card__smalltext">this is the bio...</small></p>
+                                                <p class="card__text"><small class="card__smalltext card__bio">this is the bio...</small></p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <table class="table">
+                                <table class="table" id="tablaEspecial">
                                     <thead>
                                         <tr>
                                             <th scope="col" class="table__title table__row">Repositories</th>
@@ -72,12 +72,8 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <th scope="row" class="table__row">Repository 1</th>
-                                            <td class="w-100 text-right">Patata</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row" class="table__row">Repository 2</th>
-                                            <td class="w-100 text-right">Patata</td>
+                                            <!-- <th scope="row" class="table__row"></th>
+                                            <td class="w-100 text-right"><i class="fas fa-star"></i><span class="repo__likes"></span><i class="fas fa-code-branch"></i><span class="repo__forks"></span></td> -->
                                         </tr>
                                     </tbody>
                                 </table>
@@ -87,42 +83,45 @@
                 </div>
             </div>
         </div>
-        <div class="banner banner3__body">
+        <!-- Banner 3 -->
+        <div class="banner banner3__body d-none">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <form class="justify-content-center form-inline banner3__form">
-                            <div class="form__container3 form-inline text-center">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-sm-12 col-md-9 pr-0">
-                                            <input type="text" class="form-control user__input3" placeholder="Search user name...">
-                                        </div>
-                                        <div class="col-sm-12 col-md-3 text-center">
-                                            <button type="button" class="btn send__button3">Search</button>
+                        <div class="banner3__container">
+                            <form class="justify-content-center form-inline banner3__form">
+                                <div class="form__container3 form-inline text-center">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-10 pr-0">
+                                                <input type="text" class="form-control user__input3" placeholder="Search user name...">
+                                            </div>
+                                            <div class="col-sm-12 col-md-2 p-0">
+                                                <button type="button" class="btn send__button3">Search</button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-sm-12 p-3">
-                                            <div class="text-left style__success">
-                                                <p class="m-0 p-3">Patata</p>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-12 p-3 respuesta__container">
+                                                <div class="text-left style__danger">
+                                                    <p class="m-0 p-3">Does not exist</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    <!-- Optional JavaScript -->
-    <script src="index.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+        <!-- Optional JavaScript -->
+        <script src="index.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
 </html>
