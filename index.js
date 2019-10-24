@@ -30,7 +30,7 @@ function error(status) {
 
 function imprimir(objRepo) {
     console.log(objRepo);
-    for (i = 0; i < objRepo.length; i++) {
+    for (let i = 0; i < objRepo.length; i++) {
         let repo = objRepo[i];
         let tr = `<tr><th scope="row" class="table__row">${repo["name"]}</th><td class="w-100 text-right"><i class="fas fa-star"></i><span class="repo__likes"> ${repo["watchers_count"]} </span><i class="fas fa-code-branch"></i><span class="repo__forks">${repo["forks_count"]}</span></td></tr>`
 
